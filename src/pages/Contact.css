@@ -77,7 +77,9 @@
   min-width: 300px;
   padding-left: 40px;
 }
-
+.contact-timeline p{
+  margin: 20px;
+}
 .line {
   position: absolute;
   left: 15px;
