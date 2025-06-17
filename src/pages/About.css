@@ -1,0 +1,174 @@
+.about {
+  margin-top: 10vh;
+  padding-top: 40px;
+}
+
+.about-heading {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #008080;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  color: #d5875d;
+  font-weight: 600;
+}
+
+.service-card {
+  background-color: transparent;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  border: 1px solid #ddd;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+.icon-box {
+  font-size: 2.5rem;
+  color: #008080;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #343a40;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.info-box {
+  background-color: transparent;
+  border-radius: 12px;
+  min-height: 180px;
+  border: 1px solid #ccc;
+}
+
+.info-icon {
+  font-size: 2rem;
+  color: teal;
+}
+
+.specializations .spec-item {
+  font-size: 1.05rem;
+  color: #444;
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.specializations .spec-item::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #008080;
+  letter-spacing: 3px;
+  margin-right: 8px; /* Optional, adds spacing if using inline-block instead */
+}
+.icon-box {
+  font-size: 2rem;
+  color: #008080;
+}
+
+.testimonial-box {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+}
+
+.testimonial-text {
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.client-name {
+  color: #333;
+}
+
+
+.quote-icon {
+  font-size: 1.5rem;
+  color: #008080;
+}
+
+
+/* Impact Section */
+section.text-center {
+  background: #f9f9f9;
+  padding: 60px 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.text-p1 {
+  color: #008080; /* Bootstrap primary blue */
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+section.text-center p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+/* Optional: Add hover effect to each metric block */
+section.text-center .col-6 {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  border-radius: 10px;
+}
+
+section.text-center .col-6:hover {
+  background-color: #e6f0ff;
+  transform: translateY(-5px);
+}
+
+
+.client-name {
+  font-weight: 600;
+  color: #008080;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-heading,
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+  .service-card {
+    width: 100%;
+    max-width: 330px; /* Limit card width for nicer mobile view */
+  }
+  .row {
+    justify-content: center !important;
+  }
+  .card-text,
+  .testimonial-text {
+    font-size: 0.95rem;
+  }
+  .col-12 {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .specializations .spec-item {
+    font-size: 0.95rem;
+  }
+}

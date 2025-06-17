@@ -1,0 +1,134 @@
+/* Navbar container */
+.custom-navbar {
+  background-color: white !important;
+  z-index: 1050;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1vh 2vw;
+}
+
+/* Brand styling */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.logo {
+  height: 8vw;
+  width: 8vw;
+  max-height: 80px;
+  max-width: 80px;
+  min-height: 40px;
+  min-width: 40px;
+  padding: 0.5vw;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.brand-text {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-weight: 600;
+  color: #1f9f9b;
+}
+
+/* Nav links - NO background, border, or highlight */
+.nav-link {
+  font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+  color: #333 !important;
+  margin-right: 1.5vw;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* Active dropdown style ONLY for Services */
+.services-active {
+  color: #1f9f9b !important;
+}
+
+/* Dropdown menu */
+.custom-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  padding: 0.5vh 0;
+  margin-top: 0.5vh;
+  min-width: 40vw;
+  max-width: 250px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  z-index: 999;
+  border-radius: 0.25rem;
+}
+
+/* Remove background color highlight on dropdown toggle */
+.nav-item.dropdown .nav-link {
+  background-color: transparent !important;
+}
+
+/* Prevent background on focus or active states */
+.nav-item.dropdown .nav-link:focus,
+.nav-item.dropdown .nav-link:active {
+  background-color: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Remove highlight from dropdown items */
+.dropdown-item:focus,
+.dropdown-item:active {
+  background-color: transparent !important;
+  color: #1f9f9b !important;
+}
+
+/* Keep hover effect for dropdown items */
+.dropdown-item:hover {
+  background-color: #f7f7f7;
+  color: #1f9f9b;
+}
+
+
+/* Responsive */
+@media (max-width: 992px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2vh 2vw;
+  }
+
+  .dropdown-menu.show {
+    position: relative !important;
+    width: 100%;
+  }
+
+  .navbar-brand {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 12vw;
+    width: 12vw;
+  }
+
+  .brand-text {
+    font-size: clamp(0.9rem, 3.5vw, 1rem);
+  }
+
+  .nav-link {
+    font-size: clamp(0.8rem, 3vw, 1rem);
+    margin-right: 1vw;
+  }
+
+  .custom-dropdown {
+    min-width: 100%;
+  }
+
+  .navbar-nav {
+    padding: 1vh 2vw;
+  }
+}
