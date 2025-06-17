@@ -31,10 +31,13 @@
   padding: 0;
   list-style: none;
 }
+.footer li {
+  margin-bottom: 20px;
+}
 .footer-links li a {
   color: white;
   text-decoration: none;
-  transition: color 0.4s;
+ 
 }
 
 
@@ -43,8 +46,7 @@
 .footer ul li a {
   color: #ffffff;
   text-decoration: none;
-  transition: color 0.3s ease, text-decoration 0.4s ease;
-    background-color: transparent !important;
+
     margin-bottom: 20px;
 
 }
@@ -67,7 +69,7 @@
   color: #ffffff;
   margin-right: 15px;
   font-size: 1.5rem;
-  transition: color 0.3s ease-in-out;
+
   display: inline-block;
 }
 
@@ -127,7 +129,7 @@ footer form .btn1 {
   padding: 8px 12px;
   font-size: 1rem;
   border-radius: 4px;
-  transition: background-color 0.3s ease-in-out;
+
   white-space: nowrap;
   height: 44px;
 }
