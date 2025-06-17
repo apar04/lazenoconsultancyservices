@@ -18,7 +18,7 @@
   font-weight: 600;
   margin-bottom: 15px;
   color: #f1f1f1;
-    background-color: transparent !important;
+     line-height: 1.5;
 }
 
 .footer-text {
@@ -34,7 +34,7 @@
 .footer-links li a {
   color: white;
   text-decoration: none;
-  transition: color 0.2s;
+  transition: color 0.4s;
 }
 
 
@@ -43,15 +43,16 @@
 .footer ul li a {
   color: #ffffff;
   text-decoration: none;
-  transition: color 0.3s ease, text-decoration 0.3s ease;
+  transition: color 0.3s ease, text-decoration 0.4s ease;
     background-color: transparent !important;
+    margin-bottom: 20px;
 
 }
 
 .footer ul li a:hover {
   color: teal;
   text-decoration: underline; /* Simple underline without using border */
-    background-color: transparent !important;
+ 
 }
 
 
